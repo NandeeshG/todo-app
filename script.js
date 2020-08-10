@@ -86,6 +86,8 @@ const updateScreen = function(){
         `PENDING TASKS = ${num_pt}`;
     document.getElementById('finished_tasks').textContent =
         `FINISHED TASKS = ${num_dt}`;
+    document.getElementById('heading').innerHTML =
+        'TODO&nbsp;&nbsp;&nbsp;'+`${num_dt}/${num_pt+num_dt}`;
 }
 
 document.getElementById('input_box').addEventListener('submit',function(e){
