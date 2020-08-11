@@ -5,11 +5,17 @@ let filter = '';
 let num_pt=0;
 let num_dt=0;
 
+todos = JSON.parse(localStorage.getItem('todos'));
+if(todos===undefined||todos===null) todos = [];
+
 const addTodo = function(task){
     todos.push({task:task,status:false});
 }
 
 const pushTodo = function(){
+
+    let todosJSON = JSON.stringify(todos);
+    localStorage.setItem('todos',todosJSON);
 
     num_pt=0;
     num_dt=0;
