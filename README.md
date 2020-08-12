@@ -2,4 +2,10 @@
 ## FrontEnd simple todo-app
 ### https://nandeeshg.github.io/todo-app/
 
-## Styling yet to be done.
+TODOS -
+* Prettify the looks
+* Change x Button to some icon
+* Add columns to Todos, with user configurable column headings or Add functionality of many todo-lists.
+
+FUTURE -
+* Sync with Google calendar to remind stuff.
